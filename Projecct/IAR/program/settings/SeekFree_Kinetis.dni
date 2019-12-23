@@ -1,0 +1,109 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[JLinkDriver]
+CStepIntDis=_ 0
+LeaveTargetRunning=_ 0
+TraceBufferSize=0x00010000
+TraceStallIfFIFOFull=0x00000000
+TracePortSize=0x00000004
+[DebugChecksum]
+Checksum=931441209
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CodeCoverage]
+Enabled=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[Jet]
+JetConnSerialNo=97969900
+JetConnFoundProbes=
+DisableInterrupts=0
+LeaveRunning=0
+MultiCoreRunAll=0
+OnlineReset=Software
+PrevWtdReset=Custom
+[PlDriver]
+MemConfigValue=C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\arm\CONFIG\debugger\NXP\MK66FX1M0xxx18.ddf
+FirstRun=0
+[ArmDriver]
+EnableCache=1
+[SWOManager]
+SamplingDivider=8192
+OverrideClock=0
+CpuClock=197632
+SwoClock=512
+DataLogMode=0
+ItmPortsEnabled=63
+ItmTermIOPorts=1
+ItmLogPorts=0
+ItmLogFile=$PROJ_DIR$\ITM.log
+PowerForcePC=1
+PowerConnectPC=1
+[ETMTraceWindow]
+PortWidth=4
+PortMode=0
+CaptureDataValues=0
+CaptureDataAddresses=0
+CaptureDataRange=0
+DataFirst=0
+DataLast=-1
+StopWhen=0
+StallCPU=0
+NoPCCapture=0
+[Trace2]
+Enabled=0
+ShowSource=0
+[SWOTraceWindow]
+ForcedPcSampling=0
+ForcedInterruptLogs=0
+ForcedItmLogs=0
+EventCPI=0
+EventEXC=0
+EventFOLD=0
+EventLSU=0
+EventSLEEP=0
+[Trace1]
+Enabled=0
+ShowSource=1
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=
+[CallStackLog]
+Enabled=0
+[CallStackStripe]
+ShowTiming=1
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\Libraries\XMU\Bottom\Intr_Keyboard.c}.20.1" 0 0 1 "" 0 "" 0
+Count=1
+[Aliases]
+A0=_ "C:\Users\ChxxxXL\Desktop\移库\逐飞科技_K66库\Libraries\XMU\Control\Message.c" ""
+A1=_ "C:\Users\ChxxxXL\Desktop\移库\逐飞科技_K66库\Libraries\drives\src\MK60_pit.c" ""
+A2=_ "C:\Users\ChxxxXL\Desktop\移库\逐飞科技_K66库\Libraries\startup\DeviceSupport\system_MK66.c" ""
+A3=_ "F:\work\seekfree\开发板\用户资料\3-开发板历程\4-应用例程\23-总钻风&2.8TFT显示图像(OK)\Projecct\USER\src\isr.c" ""
+A4=_ "F:\work\seekfree\开发板\用户资料\3-开发板历程\4-应用例程\23-总钻风&2.8TFT显示图像(OK)\Projecct\USER\src\main.c" ""
+A5=_ "G:\Users\总钻风&2.8TFT显示图像\Libraries\drives\inc\MK60DN10_dma.h" ""
+Count=6
+SuppressDialog=1

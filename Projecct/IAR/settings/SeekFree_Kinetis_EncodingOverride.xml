@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<userOverrides>
+  <override>
+    <path>C:\Users\ChxxxXL\Desktop\&#x79FB;&#x5e93;\&#x9010;&#x98De;&#x79D1;&#x6280;_K66&#x5e93;\Libraries\XMU\Bottom\Init.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>C:\Users\ChxxxXL\Desktop\&#x79FB;&#x5e93;\&#x9010;&#x98De;&#x79D1;&#x6280;_K66&#x5e93;\Libraries\drives\inc\MK60_savedata.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>C:\Users\ChxxxXL\Desktop\&#x79FB;&#x5e93;\&#x9010;&#x98De;&#x79D1;&#x6280;_K66&#x5e93;\Libraries\drives\src\MK60_savedata.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>C:\Users\ChxxxXL\Desktop\&#x79FB;&#x5e93;\&#x9010;&#x98De;&#x79D1;&#x6280;_K66&#x5e93;\Projecct\USER\src\isr.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>E:\My Temp\&#x9010;&#x98De;&#x79D1;&#x6280;_K66&#x5e93;\Projecct\USER\src\isr.c</path>
+    <encoding>System</encoding>
+  </override>
+</userOverrides>
+
+
