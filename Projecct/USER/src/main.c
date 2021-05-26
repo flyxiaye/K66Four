@@ -12,6 +12,11 @@ int main(void)
 {
 	get_clk();
 	system_Init();
+//        ftm_pwm_init(ftm3, ftm_ch5, 75, 995);
+//        ftm_pwm_init(ftm0, ftm_ch4, 16000, 1000);//左前
+//	ftm_pwm_init(ftm0, ftm_ch5, 16000, 0);
+//	ftm_pwm_init(ftm0, ftm_ch6, 16000, 1000);//右后
+//	ftm_pwm_init(ftm0, ftm_ch7, 16000, 0);
 	systick_delay_ms(1000);
 //	MyFlash_Read(0);
 	//dialSwitchFlg3 = gpio_get(DIALSWITCH_PIN3);
@@ -35,7 +40,7 @@ int main(void)
 					GetML();
 				else
 					GetML_Ind();
-				MeetingToImage();
+//				MeetingToImage();
                                 int sum = 0;
                                 for (int i = 0; i < 188; i++)
                                 {
@@ -56,18 +61,18 @@ int main(void)
 //		displayimage032(image[0]);
 //					ShowEage();
 		//		}
-		if (CircleFlag || Img_RampFlag)
-			gpio_init(A7, GPO, 1);
-		else
-			gpio_init(A7, GPO, 0);
-		if (CircleFlag)
-			gpio_init(D0, GPO, 0);
-		else gpio_init(D0, GPO, 1);
-		if (Img_RampFlag || CircleFlag)
-			gpio_init(D1, GPO, 0);
-		else gpio_init(D1, GPO, 1);
+//		if (CircleFlag || Img_RampFlag)
+//			gpio_init(A7, GPO, 1);
+//		else
+//			gpio_init(A7, GPO, 0);
+//		if (CircleFlag)
+//			gpio_init(D0, GPO, 0);
+//		else gpio_init(D0, GPO, 1);
+//		if (Img_RampFlag || CircleFlag)
+//			gpio_init(D1, GPO, 0);
+//		else gpio_init(D1, GPO, 1);
 		//UserData();
-		SendData(); //会车
+//		SendData(); //会车
 					//		UserData();
 		//SendAngle();
 		//                LogGetData();

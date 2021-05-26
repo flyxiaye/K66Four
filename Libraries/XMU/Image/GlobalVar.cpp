@@ -1,6 +1,6 @@
 #include <GlobalVar.h>
 #include "headfile.h"
-const int InitSteer = 1175;              //舵机初始值 75Hz 1149 50Hz 766  584 1435
+const int InitSteer = 952;              //舵机初始值 75Hz 1149 50Hz 766  584 1435
 const unsigned char g_Bit_Val_Up[8] = { 0x01,0x02,0x04,0x08,0x10,0x20,0x40,0x80 };//液晶图像压缩;
 const unsigned char g_Bit_Val_Down[8] = { 0x80,0x40,0x20,0x10,0x08,0x04,0x02,0x01 };
 
@@ -55,7 +55,7 @@ int Img_RampFlag = 0;			//坡道标志
 int BrokenLastAve = 0;
 int StopLineDist = 0;
 
-unsigned char Img_CircleOpen = 0;
+unsigned char Img_CircleOpen = 1;
 unsigned char Img_StraightBrokenOpen = 0;
 unsigned char Img_CurveBrokenOpen = 0;
 unsigned char Img_StopOpen = 0;

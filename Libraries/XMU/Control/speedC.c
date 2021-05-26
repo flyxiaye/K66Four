@@ -3,13 +3,15 @@
 #include "speedC.h"
 #include "AD.h"
 
+
+
 int speed_sum = 0;
 void SpeedGet(void)
 {
 	//Âö³å¶ÁÈ¡
 	rCurSpeed = ftm_quad_get(ftm1);
 //        rCurSpeed = ftm_quad_get(ftm1);//4ºÅ³µ
-	lCurSpeed = ftm_quad_get(ftm2);
+	lCurSpeed = -ftm_quad_get(ftm2);
 	curSpeed = (lCurSpeed + rCurSpeed) >> 1;
 	ftm_quad_clean(ftm1);
 	ftm_quad_clean(ftm2);
@@ -146,24 +148,24 @@ void GiveDriveDuty(void)
 	//ÓÒÂÖ
 	if (rightSpeedOut >= 0)
 	{
-		ftm_pwm_duty(ftm0, ftm_ch4, rightSpeedOut); //ÓÒÕý
-		ftm_pwm_duty(ftm0, ftm_ch5, 0);
+		ftm_pwm_duty(ftm0, ftm_ch6, rightSpeedOut); //ÓÒÕý
+		ftm_pwm_duty(ftm0, ftm_ch7, 0);
 	}
 	else
 	{
-		ftm_pwm_duty(ftm0, ftm_ch4, 0);
-		ftm_pwm_duty(ftm0, ftm_ch5, -rightSpeedOut);
+		ftm_pwm_duty(ftm0, ftm_ch6, 0);
+		ftm_pwm_duty(ftm0, ftm_ch7, -rightSpeedOut);
 	}
 	//×óÂÖ
 	if (leftSpeedOut >= 0)
 	{
-		ftm_pwm_duty(ftm0, ftm_ch6, 0);
-		ftm_pwm_duty(ftm0, ftm_ch7, leftSpeedOut);//×óÕý
+		ftm_pwm_duty(ftm0, ftm_ch5, leftSpeedOut);
+		ftm_pwm_duty(ftm0, ftm_ch4, 0);//×óÕý
 	}
 	else
 	{
-		ftm_pwm_duty(ftm0, ftm_ch6, -leftSpeedOut);//×ó·´
-		ftm_pwm_duty(ftm0, ftm_ch7, 0);
+		ftm_pwm_duty(ftm0, ftm_ch5, 0);//×ó·´
+		ftm_pwm_duty(ftm0, ftm_ch4, -leftSpeedOut);
 	}
 }
 

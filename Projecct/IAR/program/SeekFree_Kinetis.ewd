@@ -85,7 +85,7 @@
         </option>
         <option>
           <name>OCDynDriverList</name>
-          <state>JLINK_ID</state>
+          <state>CMSISDAP_ID</state>
         </option>
         <option>
           <name>OCLastSavedByProductVersion</name>
@@ -332,7 +332,7 @@
         <option>
           <name>CMSISDAPResetList</name>
           <version>1</version>
-          <state>5</state>
+          <state>4</state>
         </option>
         <option>
           <name>CMSISDAPHWResetDuration</name>
@@ -897,7 +897,7 @@
         </option>
         <option>
           <name>CCJLinkInterfaceRadio</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>CCJLinkResetList</name>
@@ -1204,7 +1204,7 @@
         </option>
         <option>
           <name>CCSTLinkInterfaceRadio</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>CCSTLinkInterfaceCmdLine</name>

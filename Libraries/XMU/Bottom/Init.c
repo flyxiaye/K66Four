@@ -55,7 +55,7 @@ void DriveInit()
 {
 	ftm_pwm_init(ftm0, ftm_ch4, 16000, 0);//×óÇ°
 	ftm_pwm_init(ftm0, ftm_ch5, 16000, 0);
-	ftm_pwm_init(ftm0, ftm_ch6, 16000, 0);//ÓÒºó
+	ftm_pwm_init(ftm0, ftm_ch6, 16000, 0);//ÓÒÇ°
 	ftm_pwm_init(ftm0, ftm_ch7, 16000, 0);
 }
 

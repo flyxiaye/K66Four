@@ -15,7 +15,7 @@ TraceBufferSize=0x00010000
 TraceStallIfFIFOFull=0x00000000
 TracePortSize=0x00000004
 [DebugChecksum]
-Checksum=931441209
+Checksum=-1946518494
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -26,13 +26,13 @@ ShowArgs=0
 [Disassembly]
 MixedMode=1
 [Jet]
-JetConnSerialNo=97969900
+JetConnSerialNo=00202
 JetConnFoundProbes=
 DisableInterrupts=0
 LeaveRunning=0
 MultiCoreRunAll=0
 OnlineReset=Software
-PrevWtdReset=Custom
+PrevWtdReset=System
 [PlDriver]
 MemConfigValue=C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\arm\CONFIG\debugger\NXP\MK66FX1M0xxx18.ddf
 FirstRun=0
@@ -50,6 +50,61 @@ ItmLogPorts=0
 ItmLogFile=$PROJ_DIR$\ITM.log
 PowerForcePC=1
 PowerConnectPC=1
+[StLinkDriver]
+CStepIntDis=_ 0
+LeaveTargetRunning=_ 0
+stlinkResetStyle=0
+stlinkResetStrategy=1
+stlinkserialNo=28371887
+stlinkfoundProbes=
+[SWOTraceHWSettings]
+OverrideDefaultClocks=0
+CpuClock=72000000
+ClockAutoDetect=0
+ClockWanted=2000000
+JtagSpeed=2000000
+Prescaler=36
+TimeStampPrescIndex=0
+TimeStampPrescData=0
+PcSampCYCTAP=1
+PcSampPOSTCNT=15
+PcSampIndex=0
+DataLogMode=0
+ITMportsEnable=0
+ITMportsTermIO=0
+ITMportsLogFile=0
+ITMlogFile=$PROJ_DIR$\ITM.log
+[DataLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+[EventLog]
+Title_0=Ch3
+Symbol_0=0 4 1
+Title_1=Ch2
+Symbol_1=0 4 1
+Title_2=Ch1
+Symbol_2=0 4 1
+Title_3=Ch0
+Symbol_3=0 4 1
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+SumSortOrder=0
+[InterruptLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+SumSortOrder=0
+[Trace1]
+Enabled=0
+ShowSource=1
 [ETMTraceWindow]
 PortWidth=4
 PortMode=0
@@ -73,19 +128,9 @@ EventEXC=0
 EventFOLD=0
 EventLSU=0
 EventSLEEP=0
-[Trace1]
-Enabled=0
-ShowSource=1
-[Log file]
-LoggingEnabled=_ 0
-LogFile=_ ""
-Category=_ 0
-[TermIOLog]
-LoggingEnabled=_ 0
-LogFile=_ ""
 [DriverProfiling]
 Enabled=0
-Mode=1
+Mode=2
 Graph=0
 Symbiont=0
 Exclusions=
@@ -93,11 +138,19 @@ Exclusions=
 Enabled=0
 [CallStackStripe]
 ShowTiming=1
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
 [Disassemble mode]
 mode=0
 [Breakpoints2]
 Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\Libraries\XMU\Bottom\Intr_Keyboard.c}.20.1" 0 0 1 "" 0 "" 0
-Count=1
+Bp1=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\Libraries\XMU\Bottom\BMP.c}.51.7" 0 0 1 "" 0 "" 0
+Count=2
 [Aliases]
 A0=_ "C:\Users\ChxxxXL\Desktop\ÒÆ¿â\Öð·É¿Æ¼¼_K66¿â\Libraries\XMU\Control\Message.c" ""
 A1=_ "C:\Users\ChxxxXL\Desktop\ÒÆ¿â\Öð·É¿Æ¼¼_K66¿â\Libraries\drives\src\MK60_pit.c" ""

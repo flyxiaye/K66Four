@@ -71,9 +71,9 @@ void PIT0_IRQHandler(void)
 	PIT_FlAG_CLR(pit0);
 	Mpu_Data_Prepare(0.002);
 	My_IMU_update(0.002);
-	get_ind_error();
-	if (g_block_open)
-		inf();
+//	get_ind_error();
+//	if (g_block_open)
+//		inf();
 	SpeedControl();
 //	if (Img_RampFlag)
 //	{
@@ -99,7 +99,7 @@ void PIT0_IRQHandler(void)
 ////	{
 ////		g_drive_flag = 0;
 ////	}
-//	Angle_GoIslandSix();
+	Angle_GoIslandSix();
 	Dist_ClearIslandSeven();		//æ¸…çŽ¯å²?çŠ¶æ€        ?
 	//if (1 == dialSwitchFlg4)
 	//	ClearFlag(&BrokenFlag);

@@ -34,8 +34,8 @@ void CarControl(void)
 	}
 	else								//正常情况
 	{
-		if (!Img_BlockFlag && 2 != Img_BrokenFlag && g_StateMaster < StateGo)
-			Ind_StopCar();//电磁停车
+//		if (!Img_BlockFlag && 2 != Img_BrokenFlag && g_StateMaster < StateGo)
+//			Ind_StopCar();//电磁停车
 		if (!g_camera_open && g_ind_open
 			|| g_camera_open && (2 == Img_BrokenFlag || 3 == Img_BrokenFlag)
 			|| g_camera_open && (1 == Img_BrokenFlag || 4 == Img_BrokenFlag || 5 == Img_BrokenFlag) && ML_Count > 50)
